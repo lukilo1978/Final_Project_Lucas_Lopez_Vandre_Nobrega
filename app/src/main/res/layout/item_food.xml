@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="343dp"
+        android:layout_height="532dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/carbsView"
+            app:layout_constraintEnd_toStartOf="@+id/calories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/Foods"
+            android:layout_width="93dp"
+            android:layout_height="29dp"
+            android:text="Food"
+            app:layout_constraintBottom_toTopOf="@+id/caloriesView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="215dp" />
+
+        <TextView
+            android:id="@+id/caloriesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="77dp" />
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="113dp"
+            android:layout_height="34dp"
+            android:text="Kcal"
+            app:layout_constraintBottom_toBottomOf="@+id/foodImage"
+            app:layout_constraintTop_toBottomOf="@+id/caloriesView"
+            tools:layout_editor_absoluteX="201dp" />
+
+        <TextView
+            android:id="@+id/carbsView"
+            android:layout_width="54dp"
+            android:layout_height="19dp"
+            android:text="Carbs"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <TextView
+            android:id="@+id/carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <TextView
+            android:id="@+id/proteinsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proteins"
+            app:layout_constraintStart_toStartOf="@+id/carbsView"
+            tools:layout_editor_absoluteY="285dp" />
+
+        <TextView
+            android:id="@+id/proteins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/carbs"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <TextView
+            android:id="@+id/fatsView"
+            android:layout_width="49dp"
+            android:layout_height="18dp"
+            android:text="Fats"
+            app:layout_constraintStart_toStartOf="@+id/proteinsView"
+            tools:layout_editor_absoluteY="375dp" />
+
+        <TextView
+            android:id="@+id/fats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/proteins"
+            tools:layout_editor_absoluteY="421dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
